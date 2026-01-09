@@ -1,0 +1,29 @@
+{
+  "total_urls": 3,
+  "successful": 3,
+  "failed": 0,
+  "total_text_length": 0,
+  "details": [
+    {
+      "url": "https://starwars.fandom.com/wiki/Star_Wars:_Episode_VI_Return_of_the_Jedi",
+      "title": "Client Challenge",
+      "status": "success",
+      "file": "knowledge_base/source/Client Challenge_1.txt",
+      "text_length": 0
+    },
+    {
+      "url": "https://starwars.fandom.com/wiki/Star_Wars:_Episode_VII_The_Force_Awakens",
+      "title": "Client Challenge",
+      "status": "success",
+      "file": "knowledge_base/source/Client Challenge_2.txt",
+      "text_length": 0
+    },
+    {
+      "url": "https://starwars.fandom.com/wiki/Star_Wars:_Andor",
+      "title": "Client Challenge",
+      "status": "success",
+      "file": "knowledge_base/source/Client Challenge_3.txt",
+      "text_length": 0
+    }
+  ]
+}

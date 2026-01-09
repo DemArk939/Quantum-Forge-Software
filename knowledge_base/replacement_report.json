@@ -1,0 +1,234 @@
+{
+  "total_files": 32,
+  "successful": 32,
+  "failed": 0,
+  "total_replacements": 31861,
+  "replacement_dict_used": "terms_map.json",
+  "replacement_count": 121,
+  "files": [
+    {
+      "filename": "Anakin Skywalker _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 5922,
+      "size": 660554,
+      "output_path": "knowledge_base/target/Anakin Skywalker _ Wookieepedia.txt"
+    },
+    {
+      "filename": "C-3PO _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 1872,
+      "size": 103529,
+      "output_path": "knowledge_base/target/C-3PO _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Chewbacca _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 1242,
+      "size": 105766,
+      "output_path": "knowledge_base/target/Chewbacca _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Darth Sidious _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 3488,
+      "size": 282062,
+      "output_path": "knowledge_base/target/Darth Sidious _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Han Solo _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 1410,
+      "size": 246528,
+      "output_path": "knowledge_base/target/Han Solo _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Lando (film) _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 2,
+      "size": 3147,
+      "output_path": "knowledge_base/target/Lando (film) _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Leia Skywalker Organa Solo _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 1889,
+      "size": 276595,
+      "output_path": "knowledge_base/target/Leia Skywalker Organa Solo _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Luke Skywalker _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 4812,
+      "size": 395883,
+      "output_path": "knowledge_base/target/Luke Skywalker _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Obi-Wan Kenobi _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 2909,
+      "size": 302778,
+      "output_path": "knowledge_base/target/Obi-Wan Kenobi _ Wookieepedia.txt"
+    },
+    {
+      "filename": "R2-D2 _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 2346,
+      "size": 127095,
+      "output_path": "knowledge_base/target/R2-D2 _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Rogue One_ A Star Wars Story _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 156,
+      "size": 39992,
+      "output_path": "knowledge_base/target/Rogue One_ A Star Wars Story _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Solo_ A Star Wars Story _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 213,
+      "size": 52999,
+      "output_path": "knowledge_base/target/Solo_ A Star Wars Story _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Star Wars_ Ahsoka _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 22,
+      "size": 3328,
+      "output_path": "knowledge_base/target/Star Wars_ Ahsoka _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Star Wars_ Episode I The Phantom Menace _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 198,
+      "size": 29642,
+      "output_path": "knowledge_base/target/Star Wars_ Episode I The Phantom Menace _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Star Wars_ Episode II Attack of the Clones _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 163,
+      "size": 18219,
+      "output_path": "knowledge_base/target/Star Wars_ Episode II Attack of the Clones _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Star Wars_ Episode III Revenge of the Sith _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 621,
+      "size": 52626,
+      "output_path": "knowledge_base/target/Star Wars_ Episode III Revenge of the Sith _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Star Wars_ Episode IV A New Hope _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 265,
+      "size": 56057,
+      "output_path": "knowledge_base/target/Star Wars_ Episode IV A New Hope _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Star Wars_ Episode IX The Rise of Skywalker _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 762,
+      "size": 78825,
+      "output_path": "knowledge_base/target/Star Wars_ Episode IX The Rise of Skywalker _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Star Wars_ Episode V The Empire Strikes Back _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 265,
+      "size": 39737,
+      "output_path": "knowledge_base/target/Star Wars_ Episode V The Empire Strikes Back _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Star Wars_ Episode VIII The Last Jedi _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 473,
+      "size": 58568,
+      "output_path": "knowledge_base/target/Star Wars_ Episode VIII The Last Jedi _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Star Wars_ Jedi Temple Challenge _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 44,
+      "size": 5154,
+      "output_path": "knowledge_base/target/Star Wars_ Jedi Temple Challenge _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Star Wars_ Obi-Wan Kenobi _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 34,
+      "size": 7585,
+      "output_path": "knowledge_base/target/Star Wars_ Obi-Wan Kenobi _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Star Wars_ Skeleton Crew _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 5,
+      "size": 3682,
+      "output_path": "knowledge_base/target/Star Wars_ Skeleton Crew _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Star Wars_ The Acolyte _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 84,
+      "size": 29839,
+      "output_path": "knowledge_base/target/Star Wars_ The Acolyte _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Star Wars_ The Book of Boba Fett _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 31,
+      "size": 3425,
+      "output_path": "knowledge_base/target/Star Wars_ The Book of Boba Fett _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Star Wars_ The Clone Wars (film) _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 96,
+      "size": 18880,
+      "output_path": "knowledge_base/target/Star Wars_ The Clone Wars (film) _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Star Wars_ The Mandalorian _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 71,
+      "size": 14205,
+      "output_path": "knowledge_base/target/Star Wars_ The Mandalorian _ Wookieepedia.txt"
+    },
+    {
+      "filename": "The Mandalorian and Grogu _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 47,
+      "size": 3449,
+      "output_path": "knowledge_base/target/The Mandalorian and Grogu _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Untitled Star Wars film (Dave Filoni) _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 12,
+      "size": 1942,
+      "output_path": "knowledge_base/target/Untitled Star Wars film (Dave Filoni) _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Untitled Star Wars film (James Mangold) _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 17,
+      "size": 3587,
+      "output_path": "knowledge_base/target/Untitled Star Wars film (James Mangold) _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Untitled Star Wars film (Sharmeen Obaid-Chinoy) _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 78,
+      "size": 20636,
+      "output_path": "knowledge_base/target/Untitled Star Wars film (Sharmeen Obaid-Chinoy) _ Wookieepedia.txt"
+    },
+    {
+      "filename": "Yoda _ Wookieepedia.txt",
+      "status": "success",
+      "replacements": 2312,
+      "size": 146070,
+      "output_path": "knowledge_base/target/Yoda _ Wookieepedia.txt"
+    }
+  ]
+}
