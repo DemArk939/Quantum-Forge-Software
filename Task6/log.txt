@@ -1,0 +1,219 @@
+2026-01-10 22:04:06,142 - INFO - ================================================================================
+2026-01-10 22:04:06,143 - INFO - 🚀 SIMPLE FILE MONITOR INITIALIZATION
+2026-01-10 22:04:06,143 - INFO - ================================================================================
+2026-01-10 22:04:06,143 - INFO - 📦 TextSplitter: chunk_size=512, overlap=100
+2026-01-10 22:04:06,143 - INFO - 🤖 Загружаю модель: BAAI/bge-base-en-v1.5
+2026-01-10 22:04:06,161 - INFO - Use pytorch device_name: mps
+2026-01-10 22:04:06,161 - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-01-10 22:04:09,803 - INFO -  ✅ Модель загружена
+2026-01-10 22:04:09,803 - INFO - 💾 Инициализирую ChromaDB
+2026-01-10 22:04:09,816 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-01-10 22:04:09,873 - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-01-10 22:04:12,580 - INFO -  ✅ ChromaDB готов
+2026-01-10 22:04:12,580 - INFO - ================================================================================
+
+2026-01-10 22:04:12,580 - INFO - ================================================================================
+2026-01-10 22:04:12,580 - INFO - 🔍 СКАНИРОВАНИЕ НА ИЗМЕНЕНИЯ
+2026-01-10 22:04:12,580 - INFO - ================================================================================
+2026-01-10 22:04:12,581 - INFO -
+🆕 НОВЫЙ: Anakin Skywalker _ Wookieepedia.txt
+2026-01-10 22:04:12,581 - INFO -
+📄 Anakin Skywalker _ Wookieepedia.txt
+2026-01-10 22:04:12,691 - INFO -   🔪 Чанков: 2046
+2026-01-10 22:04:32,663 - INFO -   ✅ Добавлено: 2046, Удалено: 0
+2026-01-10 22:04:32,666 - INFO -
+🆕 НОВЫЙ: C-3PO _ Wookieepedia.txt
+2026-01-10 22:04:32,666 - INFO -
+📄 C-3PO _ Wookieepedia.txt
+2026-01-10 22:04:32,671 - INFO -   🔪 Чанков: 355
+2026-01-10 22:04:36,245 - INFO -   ✅ Добавлено: 355, Удалено: 0
+2026-01-10 22:04:36,245 - INFO -
+🆕 НОВЫЙ: Chewbacca _ Wookieepedia.txt
+2026-01-10 22:04:36,245 - INFO -
+📄 Chewbacca _ Wookieepedia.txt
+2026-01-10 22:04:36,250 - INFO -   🔪 Чанков: 332
+2026-01-10 22:04:39,489 - INFO -   ✅ Добавлено: 332, Удалено: 0
+2026-01-10 22:04:39,489 - INFO -
+🆕 НОВЫЙ: Darth Sidious _ Wookieepedia.txt
+2026-01-10 22:04:39,489 - INFO -
+📄 Darth Sidious _ Wookieepedia.txt
+2026-01-10 22:04:39,513 - INFO -   🔪 Чанков: 885
+2026-01-10 22:04:47,751 - INFO -   ✅ Добавлено: 885, Удалено: 0
+2026-01-10 22:04:47,752 - INFO -
+🆕 НОВЫЙ: Han Solo _ Wookieepedia.txt
+2026-01-10 22:04:47,752 - INFO -
+📄 Han Solo _ Wookieepedia.txt
+2026-01-10 22:04:47,769 - INFO -   🔪 Чанков: 751
+2026-01-10 22:04:55,078 - INFO -   ✅ Добавлено: 751, Удалено: 0
+2026-01-10 22:04:55,079 - INFO -
+🆕 НОВЫЙ: Lando (film) _ Wookieepedia.txt
+2026-01-10 22:04:55,079 - INFO -
+📄 Lando (film) _ Wookieepedia.txt
+2026-01-10 22:04:55,079 - INFO -   🔪 Чанков: 11
+2026-01-10 22:04:55,216 - INFO -   ✅ Добавлено: 11, Удалено: 0
+2026-01-10 22:04:55,216 - INFO -
+🆕 НОВЫЙ: Leia Skywalker Organa Solo _ Wookieepedia.txt
+2026-01-10 22:04:55,216 - INFO -
+📄 Leia Skywalker Organa Solo _ Wookieepedia.txt
+2026-01-10 22:04:55,236 - INFO -   🔪 Чанков: 848
+2026-01-10 22:05:03,035 - INFO -   ✅ Добавлено: 848, Удалено: 0
+2026-01-10 22:05:03,035 - INFO -
+🆕 НОВЫЙ: Luke Skywalker _ Wookieepedia.txt
+2026-01-10 22:05:03,035 - INFO -
+📄 Luke Skywalker _ Wookieepedia.txt
+2026-01-10 22:05:03,069 - INFO -   🔪 Чанков: 1228
+2026-01-10 22:05:14,862 - INFO -   ✅ Добавлено: 1228, Удалено: 0
+2026-01-10 22:05:14,863 - INFO -
+🆕 НОВЫЙ: Obi-Wan Kenobi _ Wookieepedia.txt
+2026-01-10 22:05:14,863 - INFO -
+📄 Obi-Wan Kenobi _ Wookieepedia.txt
+2026-01-10 22:05:14,889 - INFO -   🔪 Чанков: 967
+2026-01-10 22:05:24,537 - INFO -   ✅ Добавлено: 967, Удалено: 0
+2026-01-10 22:05:24,538 - INFO -
+🆕 НОВЫЙ: R2-D2 _ Wookieepedia.txt
+2026-01-10 22:05:24,539 - INFO -
+📄 R2-D2 _ Wookieepedia.txt
+2026-01-10 22:05:24,546 - INFO -   🔪 Чанков: 436
+2026-01-10 22:05:28,641 - INFO -   ✅ Добавлено: 436, Удалено: 0
+2026-01-10 22:05:28,641 - INFO -
+🆕 НОВЫЙ: Rogue One_ A Star Wars Story _ Wookieepedia.txt
+2026-01-10 22:05:28,641 - INFO -
+📄 Rogue One_ A Star Wars Story _ Wookieepedia.txt
+2026-01-10 22:05:28,643 - INFO -   🔪 Чанков: 121
+2026-01-10 22:05:29,867 - INFO -   ✅ Добавлено: 121, Удалено: 0
+2026-01-10 22:05:29,867 - INFO -
+🆕 НОВЫЙ: Solo_ A Star Wars Story _ Wookieepedia.txt
+2026-01-10 22:05:29,867 - INFO -
+📄 Solo_ A Star Wars Story _ Wookieepedia.txt
+2026-01-10 22:05:29,869 - INFO -   🔪 Чанков: 168
+2026-01-10 22:05:31,506 - INFO -   ✅ Добавлено: 168, Удалено: 0
+2026-01-10 22:05:31,506 - INFO -
+🆕 НОВЫЙ: Star Wars_ Ahsoka _ Wookieepedia.txt
+2026-01-10 22:05:31,506 - INFO -
+📄 Star Wars_ Ahsoka _ Wookieepedia.txt
+2026-01-10 22:05:31,507 - INFO -   🔪 Чанков: 11
+2026-01-10 22:05:31,631 - INFO -   ✅ Добавлено: 11, Удалено: 0
+2026-01-10 22:05:31,631 - INFO -
+🆕 НОВЫЙ: Star Wars_ Episode I The Phantom Menace _ Wookieepedia.txt
+2026-01-10 22:05:31,631 - INFO -
+📄 Star Wars_ Episode I The Phantom Menace _ Wookieepedia.txt
+2026-01-10 22:05:31,633 - INFO -   🔪 Чанков: 90
+2026-01-10 22:05:32,475 - INFO -   ✅ Добавлено: 90, Удалено: 0
+2026-01-10 22:05:32,475 - INFO -
+🆕 НОВЫЙ: Star Wars_ Episode II Attack of the Clones _ Wookieepedia.txt
+2026-01-10 22:05:32,475 - INFO -
+📄 Star Wars_ Episode II Attack of the Clones _ Wookieepedia.txt
+2026-01-10 22:05:32,476 - INFO -   🔪 Чанков: 57
+2026-01-10 22:05:33,011 - INFO -   ✅ Добавлено: 57, Удалено: 0
+2026-01-10 22:05:33,011 - INFO -
+🆕 НОВЫЙ: Star Wars_ Episode III Revenge of the Sith _ Wookieepedia.txt
+2026-01-10 22:05:33,011 - INFO -
+📄 Star Wars_ Episode III Revenge of the Sith _ Wookieepedia.txt
+2026-01-10 22:05:33,013 - INFO -   🔪 Чанков: 166
+2026-01-10 22:05:34,764 - INFO -   ✅ Добавлено: 166, Удалено: 0
+2026-01-10 22:05:34,764 - INFO -
+🆕 НОВЫЙ: Star Wars_ Episode IV A New Hope _ Wookieepedia.txt
+2026-01-10 22:05:34,764 - INFO -
+📄 Star Wars_ Episode IV A New Hope _ Wookieepedia.txt
+2026-01-10 22:05:34,766 - INFO -   🔪 Чанков: 164
+2026-01-10 22:05:36,232 - INFO -   ✅ Добавлено: 164, Удалено: 0
+2026-01-10 22:05:36,233 - INFO -
+🆕 НОВЫЙ: Star Wars_ Episode IX The Rise of Skywalker _ Wookieepedia.txt
+2026-01-10 22:05:36,233 - INFO -
+📄 Star Wars_ Episode IX The Rise of Skywalker _ Wookieepedia.txt
+2026-01-10 22:05:36,236 - INFO -   🔪 Чанков: 240
+2026-01-10 22:05:38,505 - INFO -   ✅ Добавлено: 240, Удалено: 0
+2026-01-10 22:05:38,505 - INFO -
+🆕 НОВЫЙ: Star Wars_ Episode V The Empire Strikes Back _ Wookieepedia.txt
+2026-01-10 22:05:38,505 - INFO -
+📄 Star Wars_ Episode V The Empire Strikes Back _ Wookieepedia.txt
+2026-01-10 22:05:38,507 - INFO -   🔪 Чанков: 125
+2026-01-10 22:05:39,655 - INFO -   ✅ Добавлено: 125, Удалено: 0
+2026-01-10 22:05:39,655 - INFO -
+🆕 НОВЫЙ: Star Wars_ Episode VIII The Last Jedi _ Wookieepedia.txt
+2026-01-10 22:05:39,655 - INFO -
+📄 Star Wars_ Episode VIII The Last Jedi _ Wookieepedia.txt
+2026-01-10 22:05:39,657 - INFO -   🔪 Чанков: 177
+2026-01-10 22:05:41,346 - INFO -   ✅ Добавлено: 177, Удалено: 0
+2026-01-10 22:05:41,346 - INFO -
+🆕 НОВЫЙ: Star Wars_ Jedi Temple Challenge _ Wookieepedia.txt
+2026-01-10 22:05:41,346 - INFO -
+📄 Star Wars_ Jedi Temple Challenge _ Wookieepedia.txt
+2026-01-10 22:05:41,347 - INFO -   🔪 Чанков: 18
+2026-01-10 22:05:41,501 - INFO -   ✅ Добавлено: 18, Удалено: 0
+2026-01-10 22:05:41,501 - INFO -
+🆕 НОВЫЙ: Star Wars_ Obi-Wan Kenobi _ Wookieepedia.txt
+2026-01-10 22:05:41,501 - INFO -
+📄 Star Wars_ Obi-Wan Kenobi _ Wookieepedia.txt
+2026-01-10 22:05:41,502 - INFO -   🔪 Чанков: 24
+2026-01-10 22:05:41,715 - INFO -   ✅ Добавлено: 24, Удалено: 0
+2026-01-10 22:05:41,716 - INFO -
+🆕 НОВЫЙ: Star Wars_ Skeleton Crew _ Wookieepedia.txt
+2026-01-10 22:05:41,716 - INFO -
+📄 Star Wars_ Skeleton Crew _ Wookieepedia.txt
+2026-01-10 22:05:41,716 - INFO -   🔪 Чанков: 12
+2026-01-10 22:05:41,853 - INFO -   ✅ Добавлено: 12, Удалено: 0
+2026-01-10 22:05:41,853 - INFO -
+🆕 НОВЫЙ: Star Wars_ The Acolyte _ Wookieepedia.txt
+2026-01-10 22:05:41,853 - INFO -
+📄 Star Wars_ The Acolyte _ Wookieepedia.txt
+2026-01-10 22:05:41,855 - INFO -   🔪 Чанков: 96
+2026-01-10 22:05:42,694 - INFO -   ✅ Добавлено: 96, Удалено: 0
+2026-01-10 22:05:42,695 - INFO -
+🆕 НОВЫЙ: Star Wars_ The Book of Boba Fett _ Wookieepedia.txt
+2026-01-10 22:05:42,695 - INFO -
+📄 Star Wars_ The Book of Boba Fett _ Wookieepedia.txt
+2026-01-10 22:05:42,695 - INFO -   🔪 Чанков: 11
+2026-01-10 22:05:42,842 - INFO -   ✅ Добавлено: 11, Удалено: 0
+2026-01-10 22:05:42,842 - INFO -
+🆕 НОВЫЙ: Star Wars_ The Clone Wars (film) _ Wookieepedia.txt
+2026-01-10 22:05:42,842 - INFO -
+📄 Star Wars_ The Clone Wars (film) _ Wookieepedia.txt
+2026-01-10 22:05:42,843 - INFO -   🔪 Чанков: 56
+2026-01-10 22:05:43,354 - INFO -   ✅ Добавлено: 56, Удалено: 0
+2026-01-10 22:05:43,354 - INFO -
+🆕 НОВЫЙ: Star Wars_ The Mandalorian _ Wookieepedia.txt
+2026-01-10 22:05:43,354 - INFO -
+📄 Star Wars_ The Mandalorian _ Wookieepedia.txt
+2026-01-10 22:05:43,355 - INFO -   🔪 Чанков: 43
+2026-01-10 22:05:43,729 - INFO -   ✅ Добавлено: 43, Удалено: 0
+2026-01-10 22:05:43,729 - INFO -
+🆕 НОВЫЙ: The Mandalorian and Grogu _ Wookieepedia.txt
+2026-01-10 22:05:43,729 - INFO -
+📄 The Mandalorian and Grogu _ Wookieepedia.txt
+2026-01-10 22:05:43,730 - INFO -   🔪 Чанков: 10
+2026-01-10 22:05:43,852 - INFO -   ✅ Добавлено: 10, Удалено: 0
+2026-01-10 22:05:43,853 - INFO -
+🆕 НОВЫЙ: Untitled Star Wars film (Dave Filoni) _ Wookieepedia.txt
+2026-01-10 22:05:43,853 - INFO -
+📄 Untitled Star Wars film (Dave Filoni) _ Wookieepedia.txt
+2026-01-10 22:05:43,853 - INFO -   🔪 Чанков: 6
+2026-01-10 22:05:43,934 - INFO -   ✅ Добавлено: 6, Удалено: 0
+2026-01-10 22:05:43,934 - INFO -
+🆕 НОВЫЙ: Untitled Star Wars film (James Mangold) _ Wookieepedia.txt
+2026-01-10 22:05:43,935 - INFO -
+📄 Untitled Star Wars film (James Mangold) _ Wookieepedia.txt
+2026-01-10 22:05:43,935 - INFO -   🔪 Чанков: 10
+2026-01-10 22:05:44,052 - INFO -   ✅ Добавлено: 10, Удалено: 0
+2026-01-10 22:05:44,052 - INFO -
+🆕 НОВЫЙ: Untitled Star Wars film (Sharmeen Obaid-Chinoy) _ Wookieepedia.txt
+2026-01-10 22:05:44,052 - INFO -
+📄 Untitled Star Wars film (Sharmeen Obaid-Chinoy) _ Wookieepedia.txt
+2026-01-10 22:05:44,053 - INFO -   🔪 Чанков: 63
+2026-01-10 22:05:44,577 - INFO -   ✅ Добавлено: 63, Удалено: 0
+2026-01-10 22:05:44,577 - INFO -
+🆕 НОВЫЙ: Yoda _ Wookieepedia.txt
+2026-01-10 22:05:44,577 - INFO -
+📄 Yoda _ Wookieepedia.txt
+2026-01-10 22:05:44,581 - INFO -   🔪 Чанков: 464
+2026-01-10 22:05:48,906 - INFO -   ✅ Добавлено: 464, Удалено: 0
+2026-01-10 22:05:48,909 - INFO -
+================================================================================
+2026-01-10 22:05:48,909 - INFO - 📊 ИТОГИ
+2026-01-10 22:05:48,909 - INFO - ================================================================================
+2026-01-10 22:05:48,909 - INFO - 📁 Новых: 32
+2026-01-10 22:05:48,909 - INFO - 📝 Изменённых: 0
+2026-01-10 22:05:48,909 - INFO - 🗑️ Удалённых: 0
+2026-01-10 22:05:48,909 - INFO - ➕ Добавлено чанков: 9991
+2026-01-10 22:05:48,909 - INFO - ➖ Удалено чанков: 0
+2026-01-10 22:05:48,909 - INFO - ================================================================================

@@ -1,0 +1,32 @@
+@startuml Vector_Database_Simple
+title File Monitor для ChromaDB - Архитектура
+
+top to bottom direction
+
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Container.puml
+
+Person(user, "Пользователь", "Добавляет документы")
+
+System_Boundary(system, "File Monitor System") {
+  Container(monitor, "File Monitor", "Python", "Сканирует файлы, отслеживает изменения")
+  Container(splitter, "Text Splitter", "LangChain", "Разбивает текст на чанки (512 символов)")
+  Container(embedder, "Embedder", "SentenceTransformer\nBAI/bge-en-v1.5", "Генерирует векторы (768-D)")
+  ContainerDb(chromadb, "ChromaDB", "SQLite + HNSW", "Хранит чанки и векторы")
+  ContainerDb(state, "file_state.json", "JSON", "Отслеживает хеши файлов")
+  Container(scheduler, "Cron Scheduler", "Linux/Mac", "Запускает скрипт по расписанию")
+  Container(logger, "Логирование", "Python logging", "Сохраняет логи в cron.log")
+}
+
+Person(person_external, "Система поиска", "Выполняет семантический поиск (RAG)")
+
+Rel(user, monitor, "Добавляет файлы в knowledge_base/")
+Rel(monitor, state, "Сравнивает хеши файлов")
+Rel(state, monitor, "Определяет: новый/изменён/удалён")
+Rel(monitor, splitter, "Разбивает документы на чанки")
+Rel(splitter, embedder, "Передаёт чанки")
+Rel(embedder, chromadb, "Сохраняет чанки + векторы (UPSERT/DELETE)")
+Rel(scheduler, monitor, "Запускает периодически (cron)")
+Rel(monitor, logger, "Записывает результаты")
+Rel(chromadb, person_external, "Поиск по смыслу (O(log n))")
+
+@enduml

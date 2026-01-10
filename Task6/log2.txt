@@ -1,0 +1,95 @@
+2026-01-10 22:48:36,721 - INFO - ================================================================================
+2026-01-10 22:48:36,721 - INFO - 🚀 FILE MONITOR INITIALIZATION
+2026-01-10 22:48:36,721 - INFO - ================================================================================
+2026-01-10 22:48:36,722 - INFO - 📦 TextSplitter: chunk_size=512, overlap=100
+2026-01-10 22:48:36,723 - INFO - 🤖 Загружаю модель: BAAI/bge-base-en-v1.5
+2026-01-10 22:48:36,740 - INFO - Use pytorch device_name: mps
+2026-01-10 22:48:36,740 - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-01-10 22:48:40,067 - INFO -  ✅ Модель загружена
+2026-01-10 22:48:40,067 - INFO - 💾 Инициализирую ChromaDB
+2026-01-10 22:48:40,081 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-01-10 22:48:40,138 - INFO - Load pretrained SentenceTransformer: BAAI/bge-base-en-v1.5
+2026-01-10 22:48:43,067 - INFO -  ✅ ChromaDB готов
+2026-01-10 22:48:43,067 - INFO - ================================================================================
+
+2026-01-10 22:48:43,067 - INFO - ================================================================================
+2026-01-10 22:48:43,067 - INFO - 🔍 СКАНИРОВАНИЕ НА ИЗМЕНЕНИЯ
+2026-01-10 22:48:43,067 - INFO - ================================================================================
+2026-01-10 22:48:43,069 - INFO -
+📝 ИЗМЕНЁН: Anakin Skywalker _ Wookieepedia.txt
+2026-01-10 22:48:43,069 - INFO -
+📄 Anakin Skywalker _ Wookieepedia.txt
+2026-01-10 22:48:44,581 - INFO -   🔪 Чанков: 2046
+2026-01-10 22:49:01,834 - INFO -   ✅ Добавлено: 2046, Удалено: 2046
+2026-01-10 22:49:01,837 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: C-3PO _ Wookieepedia.txt
+2026-01-10 22:49:01,838 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Chewbacca _ Wookieepedia.txt
+2026-01-10 22:49:01,839 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Darth Sidious _ Wookieepedia.txt
+2026-01-10 22:49:01,840 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Han Solo _ Wookieepedia.txt
+2026-01-10 22:49:01,840 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Lando (film) _ Wookieepedia.txt
+2026-01-10 22:49:01,841 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Leia Skywalker Organa Solo _ Wookieepedia.txt
+2026-01-10 22:49:01,841 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Luke Skywalker _ Wookieepedia.txt
+2026-01-10 22:49:01,842 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Obi-Wan Kenobi _ Wookieepedia.txt
+2026-01-10 22:49:01,843 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: R2-D2 _ Wookieepedia.txt
+2026-01-10 22:49:01,844 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Rogue One_ A Star Wars Story _ Wookieepedia.txt
+2026-01-10 22:49:01,844 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Solo_ A Star Wars Story _ Wookieepedia.txt
+2026-01-10 22:49:01,845 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Star Wars_ Ahsoka _ Wookieepedia.txt
+2026-01-10 22:49:01,845 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Star Wars_ Episode I The Phantom Menace _ Wookieepedia.txt
+2026-01-10 22:49:01,845 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Star Wars_ Episode II Attack of the Clones _ Wookieepedia.txt
+2026-01-10 22:49:01,845 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Star Wars_ Episode III Revenge of the Sith _ Wookieepedia.txt
+2026-01-10 22:49:01,846 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Star Wars_ Episode IV A New Hope _ Wookieepedia.txt
+2026-01-10 22:49:01,846 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Star Wars_ Episode IX The Rise of Skywalker _ Wookieepedia.txt
+2026-01-10 22:49:01,847 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Star Wars_ Episode V The Empire Strikes Back _ Wookieepedia.txt
+2026-01-10 22:49:01,848 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Star Wars_ Episode VIII The Last Jedi _ Wookieepedia.txt
+2026-01-10 22:49:01,848 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Star Wars_ Jedi Temple Challenge _ Wookieepedia.txt
+2026-01-10 22:49:01,848 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Star Wars_ Obi-Wan Kenobi _ Wookieepedia.txt
+2026-01-10 22:49:01,848 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Star Wars_ Skeleton Crew _ Wookieepedia.txt
+2026-01-10 22:49:01,848 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Star Wars_ The Acolyte _ Wookieepedia.txt
+2026-01-10 22:49:01,849 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Star Wars_ The Book of Boba Fett _ Wookieepedia.txt
+2026-01-10 22:49:01,849 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Star Wars_ The Clone Wars (film) _ Wookieepedia.txt
+2026-01-10 22:49:01,849 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Star Wars_ The Mandalorian _ Wookieepedia.txt
+2026-01-10 22:49:01,849 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: The Mandalorian and Grogu _ Wookieepedia.txt
+2026-01-10 22:49:01,849 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Untitled Star Wars film (Dave Filoni) _ Wookieepedia.txt
+2026-01-10 22:49:01,849 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Untitled Star Wars film (James Mangold) _ Wookieepedia.txt
+2026-01-10 22:49:01,850 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Untitled Star Wars film (Sharmeen Obaid-Chinoy) _ Wookieepedia.txt
+2026-01-10 22:49:01,851 - INFO -
+⏸️ БЕЗ ИЗМЕНЕНИЙ: Yoda _ Wookieepedia.txt
+2026-01-10 22:49:01,854 - INFO -
+================================================================================
+2026-01-10 22:49:01,854 - INFO - 📊 ИТОГИ
+2026-01-10 22:49:01,854 - INFO - ================================================================================
+2026-01-10 22:49:01,854 - INFO - 📁 Новых: 0
+2026-01-10 22:49:01,854 - INFO - 📝 Изменённых: 1
+2026-01-10 22:49:01,854 - INFO - 🗑️ Удалённых: 0
+2026-01-10 22:49:01,854 - INFO - ➕ Добавлено чанков: 2046
+2026-01-10 22:49:01,854 - INFO - ➖ Удалено чанков: 2046
+2026-01-10 22:49:01,854 - INFO - ================================================================================
