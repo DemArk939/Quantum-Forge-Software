@@ -1,0 +1,72 @@
+@startuml RAG_Request_Processing
+title RAG система: Обработка запроса и оценка результата
+
+actor User
+participant Client
+participant RAGChain
+participant Retriever
+participant ChromaDB
+participant LLM
+participant Logger
+
+autonumber
+
+User -> Client: Отправляет вопрос
+Client -> RAGChain: invoke(query)
+
+== ЭТАП 1: ПОИСК ЧАНКОВ ==
+
+RAGChain -> Retriever: get_relevant_documents(query)
+
+alt ChromaDB доступна
+    Retriever -> ChromaDB: query(query_text, n_results=3)
+    ChromaDB -> Retriever: documents[] + metadata
+    Retriever -> Retriever: sanitize_documents()
+    Retriever -> RAGChain: [Document1, Document2, Document3]
+
+else ChromaDB не доступна
+    ChromaDB -> Retriever: Exception
+    Retriever -> RAGChain: Exception
+    note right: DATABASE ERROR
+end
+
+== ЭТАП 2: ГЕНЕРАЦИЯ ОТВЕТА ==
+
+RAGChain -> RAGChain: format_docs(documents)
+RAGChain -> RAGChain: prompt.format(context, question)
+
+alt Контекст не пустой
+    RAGChain -> LLM: invoke(formatted_prompt)
+    
+    alt LLM успешен
+        LLM -> RAGChain: response_text
+        RAGChain -> RAGChain: StrOutputParser()
+    else LLM ошибка
+        LLM -> RAGChain: Exception
+        note right: API ERROR / TIMEOUT
+    end
+else Контекст пустой (no chunks)
+    RAGChain -> RAGChain: Ответ по-умолчанию
+    note right: "Не нашёл подтверждений"
+end
+
+== ЭТАП 3: ОЦЕНКА РЕЗУЛЬТАТА ==
+
+RAGChain -> Logger: log_test(
+Client -> Logger: query, response, chunks, sources)
+
+Logger -> Logger: evaluate_response()
+
+alt Длина > 300 и есть чанки
+    Logger -> Logger: Excellent
+else Длина 100-300 и есть чанки
+    Logger -> Logger: Good
+else Длина < 100 или нет чанков
+    Logger -> Logger: Short / No Chunks
+else Содержит "не знаю" / "не могу"
+    Logger -> Logger: No Info
+end
+
+Logger -> Logger: Сохранить в JSON
+
+@enduml
