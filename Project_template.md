@@ -634,3 +634,206 @@ config.json: 100%|████████████████████�
 2026-01-10 13:48:13,047 - INFO -     Позиция: 217048-217479
 2026-01-10 13:48:13,047 - INFO -     Текст: . The days following the Sovereign's death were chaotic, as massive uprisings, which the Empire trie...
 ```
+
+## Задание 4. Реализация RAG-бота с техниками промптинга
+
+В качестве LLM будем использовать YandexGPT
+
+### 1. Настройте пайплайн RAG
+
+#### Установка окружения:
+
+```shell
+pip install langchain langchain-community
+pip install yandexcloud
+```
+
+#### Возможности:
+- **Семантический поиск** через ChromaDB с моделью **BAAI/bge-base-en-v1.5**
+- **Интеллектуальная генерация ответов** с использованием **YandexGPT**
+- **Отображение релевантных документов** с показателями сходства
+- **Интерактивный режим** для диалога или однократный запрос через аргумент
+
+
+#### Конфигурация
+
+Создайте файл `.env` в корне проекта:
+
+```env
+YANDEX_API_KEY=your_api_key_here
+YANDEX_FOLDER_ID=your_folder_id_here
+```
+
+Промпт находится в файле [prompt.txt](Task4/prompt.txt)
+
+#### Интерактивный режим
+
+```shell
+python3 Task4/rag_chat.py
+```
+
+#### Запуск с однократным запросом
+
+**В файле указать нужный файл промпта:**
+
+PROMPT_FILE = "Task4/prompt.txt"
+
+```bash
+python3 Task4/rag_chat.py "Who is Kael Thorn?"
+```
+
+Пример работы:
+```
+======================================================================
+Инициализация RAG системы (LangChain 1.2.3)
+======================================================================
+
+📦 Загружаю ChromaDB индекс...
+✅ Индекс загружен: 9991 документов
+✅ Используется embedding function: default
+
+🤖 Загружаю YandexGPT...
+✅ YandexGPT готов
+
+======================================================================
+RAG Система: ChromaDB + BGE-Base-v1.5 + YandexGPT (LangChain 1.2.3)
+======================================================================
+
+
+======================================================================
+📖 Вопрос: Who is Kael Thorn?
+
+🔍 Ищу релевантные документы (используя BGE-Base-v1.5)...
+🤖 Генерирую ответ...
+
+💬 Ответ YandexGPT:
+**A. Краткий ответ**
+Kael Thorn is a man who forged deep connections with his friends and looked out for their wellbeing. He was met by Kenobi and was the child of Shmi Vaelor.
+
+**B. Развёрнутое объяснение**
+1. Kael Thorn is a man who forged deep connections with his friends and looked out for their wellbeing [1].
+2. Kenobi meets Kael Thorn [2].
+3. Kael Thorn is the child of Shmi Vaelor [3].
+
+📚 Найденные документы (отранжированы BGE-Base-v1.5):
+
+[Документ 1] (релевантность: 74.0%)
+Текст: Kael Thorn was a man who forged deep connections with his friends, looking out for their wellbeing at all times....
+
+[Документ 2] (релевантность: 73.8%)
+Текст: Kenobi meets Kael Thorn....
+
+[Документ 3] (релевантность: 73.3%)
+Текст: Shmi Vaelor and her baby, Kael Thorn...
+
+======================================================================
+```
+
+### 2. Подключите технику Few-shot prompting
+
+Подготовлен новый промпт с техникой CoT [prompt_fsh.txt](Task4/prompt_fsh.txt)
+
+**В файле указать нужный файл промпта:**
+PROMPT_FILE = "Task4/prompt_fsh.txt"
+```shell
+python3 Task4/rag_chat.py "What planets was Master Eldrin on?"
+```
+
+Вот результат работы:
+```
+📖 Вопрос: What planets was Master Eldrin on?
+
+🔍 Ищу релевантные документы (используя BGE-Base-v1.5)...
+🤖 Генерирую ответ...
+
+💬 Ответ YandexGPT:
+1. Ответ:
+Master Eldrin was on Caliban and served on the Aether Guard High Council during the final years of the United Systems Republic Era.
+2. Объяснение с примерами:
+I. Sage Eldrin was a legendary Aether-sensitive human male Aether Guard Sage who served on the Aether Guard High Council during the final years of the United Systems Republic Era [1].
+II. Sage Eldrin and Grievous on Caliban [3].
+
+📚 Найденные документы (отранжированы BGE-Base-v1.5):
+
+[Документ 1] (релевантность: 71.0%)
+Текст: Sage Eldrin was a legendary Aether-sensitive human male Aether Guard Sage who served on the Aether Guard High Council during the final years of the Un...
+
+[Документ 2] (релевантность: 68.8%)
+Текст: Aether Guard Guardian Sage Eldrin...
+
+[Документ 3] (релевантность: 65.2%)
+Текст: Sage Eldrin and Grievous on Caliban...
+```
+
+### 3. Подключите Chain-of-Thought (CoT)
+
+Подготовлен новый промпт с техникой CoT [prompt_CoT.txt](Task4/prompt_CoT.txt)
+
+**В файле указать нужный файл промпта:**
+
+PROMPT_FILE = "Task4/prompt_CoT.txt"
+
+```shell
+python3 Task4/rag_chat.py "Who lived on Dustara?"
+```
+Вот результат работы:
+```
+ Вопрос: Who lived on Dustara?
+
+🔍 Ищу релевантные документы (используя BGE-Base-v1.5)...
+🤖 Генерирую ответ...
+
+💬 Ответ YandexGPT:
+Шаги:
+1. В предоставленных документах упоминается, что Ваэлор жил на Дастаре.
+2. Также упоминается, что Ваэлор и его мать изначально принадлежали Гардулле Сларкат, а затем перешли к Тойдиарцу Ватто.
+3. Ваэлор работал в лавке мудреца в Даст-Харборе.
+4. Упоминается история о том, что на Дастаре жил альтруистичный Страж, некогда могущественный воин.
+5. Также на Дастаре жило племя Песчаных людей.
+
+Ответ: Ваэлор, его мать, племя Песчаных людей, Гардулла Сларкат, Тойдиарец Ватто и альтруистичный Страж жили на Дастаре.
+
+📚 Найденные документы (отранжированы BGE-Base-v1.5):
+
+[Документ 1] (релевантность: 78.7%)
+Текст: . Regardless, Dustara was Vaelor's homeworld. While living on Dustara, Vaelor and his mother were originally owned by Gardulla the Slarkath until she ...
+
+[Документ 2] (релевантность: 70.4%)
+Текст: Vaelor was sent away to live with his relatives on Dustara....
+
+[Документ 3] (релевантность: 67.8%)
+Текст: At some point in time, a story was spread on Dustara of an altruistic Guardian, once a mighty warrior who had made the desert his home while guarding ...
+
+```
+
+### 4. Пример запроса, по которому нет ответа
+
+```shell
+python3 Task4/rag_chat.py "Does Master Zorath have a family?"
+```
+
+Результат:
+```
+📖 Вопрос: Does Master Zorath have a family?
+
+🔍 Ищу релевантные документы (используя BGE-Base-v1.5)...
+🤖 Генерирую ответ...
+
+💬 Ответ YandexGPT:
+**A. Не нашёл подтверждений.**
+
+**B. В предоставленных документах нет информации о семье Мастера Зората.** [1], [2]
+
+📚 Найденные документы (отранжированы BGE-Base-v1.5):
+
+[Документ 1] (релевантность: 73.3%)
+Текст: Zorath was a legendary Aether Guard High Sage who led the Aether Guard Order through the time of the High United Systems Republic, in the years leadin...
+
+[Документ 2] (релевантность: 72.1%)
+Текст: Zorath during his exile on Swampworld IX...
+
+[Документ 3] (релевантность: 71.2%)
+Текст: Despite his small size and old age, Zorath was an extremely accomplished aether blade duelist, wielding a short green-bladed aether blade. Zorath used...
+
+======================================================================
+```

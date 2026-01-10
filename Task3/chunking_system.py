@@ -22,6 +22,7 @@ from pathlib import Path
 from typing import List, Dict, Optional, Tuple
 from datetime import datetime
 import logging
+from chromadb.utils import embedding_functions
 
 # LangChain imports - совместимо с разными версиями
 try:
@@ -131,10 +132,15 @@ class ChunkingSystem:
             logger.error(f"❌ Ошибка инициализации ChromaDB: {e}")
             raise
 
+        bge_ef = embedding_functions.SentenceTransformerEmbeddingFunction(
+            model_name=model_name
+        )
+
         # Создаем или получаем коллекцию
         try:
             self.collection = self.chroma_client.get_or_create_collection(
                 name=db_name,
+                embedding_function=bge_ef,
                 metadata={"hnsw:space": "cosine"}
             )
             logger.info(f"   ✅ Коллекция '{db_name}' готова")
@@ -458,16 +464,20 @@ class ChunkingSystem:
 
         try:
             # Генерируем эмбединг запроса той же моделью (BAAI/bge-base-en-v1.5)
-            query_embedding = self.embedding_model.encode(query_text, show_progress_bar=False)
+            # query_embedding = self.embedding_model.encode(query_text, show_progress_bar=False)
+            #
+            # # Конвертируем если нужно
+            # if hasattr(query_embedding, 'tolist'):
+            #     query_embedding = query_embedding.tolist()
 
-            # Конвертируем если нужно
-            if hasattr(query_embedding, 'tolist'):
-                query_embedding = query_embedding.tolist()
-
-            # Используем query_embeddings вместо query_texts
+            # # Используем query_embeddings вместо query_texts
+            # results = self.collection.query(
+            #     query_embeddings=[query_embedding],  # ✅ 768 размерность - совместимо!
+            #     n_results=n_results
+            # )
             results = self.collection.query(
-                query_embeddings=[query_embedding],  # ✅ 768 размерность - совместимо!
-                n_results=n_results
+                query_texts=[query_text],
+                n_results=3
             )
 
             if results and results['documents'] and results['documents'][0]:
